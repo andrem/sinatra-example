@@ -8,6 +8,8 @@ describe 'A simple rspec test' do
   end
 
   it "should a text" do
+    get '/'
+    last_response.body.should match /a simple example/
 	end
 
 end
