@@ -9,8 +9,6 @@ configure do
 end
 
 configure(:production, :development) do
-  # set expire session in seconds (4hs)
-  use Rack::Session::Cookie, :expire_after => 14400
   enable :sessions
 end
 
